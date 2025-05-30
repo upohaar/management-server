@@ -11,5 +11,4 @@
   "scripts": {
     "start": "node index.js",
     "name": "nodemon"
-  }
-}
+  }}
