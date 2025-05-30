@@ -121,8 +121,6 @@ async function run() {
       const result = await managementDatabase.find(query).toArray();
       res.send(result);
     })
-
-    // Get specific One data
     app.get("/post/:id", async (req,res)=>{
       const id = req.params.id;
 
