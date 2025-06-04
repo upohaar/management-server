@@ -116,7 +116,6 @@ async function run() {
     app.get("/my_posts", async(req,res)=>{
       const email = req.query.email;
       console.log(email);
-    
      const query={ organizeEmail:email }
       const result = await managementDatabase.find(query).toArray();
       res.send(result);
